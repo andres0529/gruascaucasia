@@ -1,0 +1,1559 @@
+	/*/*=============================================
+GLOBAL
+=============================================*/
+*{
+	margin:0px;
+	padding:0px;
+	list-style: none;
+	text-decoration: none;
+	font-family: sans-serif;
+	box-sizing: border-box; /*Esto asegura que el relleno y el borde estén incluidos en el ancho y alto total de la caja html.*/
+}
+
+.contenedor{
+	position:absolute;
+	margin:auto;
+	width:100%;
+	height: auto;
+
+}
+.fila{
+	position:relative;
+	margin:auto;
+	width:100%;
+	height: auto;
+	/*Las columnas dentro de una fila están flotando a la izquierda, y por lo tanto se toman fuera del flujo de la página, y otros elementos serán colocados como si no fueran de las columnas. Para evitar esto, vamos a añadir un estilo que despeja el flujo*/
+	clear:both;
+	display:table;
+	/*	border: 1px solid black;*/
+}
+
+[class*="col-"]{
+	float:left;
+	/*	border:1px solid black;*/
+	padding:20px !important;
+}
+
+body, html{
+	height: 100%;
+}
+
+/*=============================================
+HEADER SECTION 1
+=============================================*/
+header .bar1 {
+	background: linear-gradient(to right, #EDAD13, black);
+	text-align: right;
+}
+header .bar1 p{
+	display: contents;
+	font-family: 'Cairo', sans-serif;
+	vertical-align: middle;
+	color: white;
+}
+header .bar1 img{
+	width: 15px;
+}
+
+header .bar1 #sun{
+	margin-right: 40px;
+}
+
+header .bar1 [class*="col-"]{
+	padding: 9px;
+}
+
+#logotipo{
+	width: 100px;
+	margin-top: -27px;
+	/*margin-left: 10%;*/
+}
+
+#logotipoCompany{
+	width: 100px;
+	margin-top: -47px;
+}
+
+
+header #retroceder a p{
+	font-family: 'Cairo', sans-serif;
+}
+
+header .bar1 [class*="col-"]{
+	float:left;
+	padding:0px !important;
+}
+
+/*-------------BOTONERA-----------*/
+
+header  dl, ol, ul {
+	margin-top: 3rem !important;
+	margin-bottom: 0rem !important;
+}
+
+header ol, ul {
+	padding-left: 0rem !important;
+}
+
+
+header ul li a{
+	display: block;
+	background: #EDAD13;
+	color: white;
+	line-height: 40px;
+	border-radius: 10px;
+	text-decoration: none;
+	font-family: 'Cairo', sans-serif;
+}
+
+header ul li a:hover{
+	background:black;
+	transition: 0.8s;
+	color: white;
+}
+
+header ul li a:focus{
+	background:white;
+}
+
+header li a {
+	text-align: center;
+	padding: 10px;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19)
+}
+
+header .title p{
+	font-size: 3rem;
+	font-family: 'Cairo', sans-serif;
+	padding-left: 3rem;
+	color: #EDAD13;
+}
+
+
+header .companyName {
+	width: 85%;
+	margin-left: 5rem;
+	margin-top: -1rem;
+}
+
+
+
+/*=============================================
+SLIDESHOW
+=============================================*/
+
+#slide{
+	position:relative;
+	margin:auto;
+	width:100%;
+	overflow: hidden;
+}
+
+#slide ul{
+	position:relative;
+	left:0%;
+	margin:auto;
+	height:auto;
+	width:700%;
+	clear:both;
+	display: table;
+	padding-left: 0rem;
+}
+
+#slide ul li{
+	position: relative;
+	float:left;
+	width:12.5%;
+}	
+
+#slide ul li img{
+	width:100%;
+	object-fit: cover;
+}
+
+#slide #paginacion{
+	position: absolute;
+	width:100%;
+	margin:auto;
+	text-align: center;
+	bottom:10px;
+	left:0;
+	z-index:1;
+}
+
+#slide #paginacion li{
+	display:inline-block;
+	margin:0px 5px;
+	cursor:pointer;
+	opacity:.5;
+	color:white;
+	text-shadow:0px 0px 5px #333;
+}	
+
+#slide #paginacion li:first-child{
+	opacity:1;
+}
+
+#slide .flechas{
+	position:absolute;
+	font-size:2em;
+	color:white;
+	cursor:pointer;
+	z-index:2;
+}
+
+#slide #retroceder{
+	top:45%;
+	left:2%;
+}
+
+#slide #avanzar{
+	top:45%;
+	right:2%;
+}
+
+/*Slide #1*/
+#slide ul li .textoSlide1 .h1 {
+	position: absolute;
+	width: 40%;
+	bottom: 12REM;
+	left: 12rem;
+	z-index: 1;
+	color: white;
+	font-weight: 700;
+	font-size: 10vh;
+}
+#slide ul li .textoSlide1 .h2{
+	position: absolute;
+	width: 40%;
+	bottom: 9REM;
+	left: 41rem;
+	z-index: 1;
+	color: white;
+	font-weight: 700;
+	font-size: 10vh;
+}
+#slide ul li .textoSlide1 .h3{
+	position: absolute;
+	width: 40%;
+	bottom: 6REM;
+	left: 47rem;
+	z-index: 1;
+	color: white;
+	font-weight: 700;
+	font-size: 10vh;
+}
+#slide ul li .textoSlide1 h1{
+	font-family: 'Cairo', sans-serif;
+}
+
+/*Slide #2*/
+#slide ul li .textoSlide2{
+	position:absolute;
+	width:100%;
+	bottom:142px;
+	left:0;
+	text-align:center;
+	z-index:1;
+	color:white;
+	background: rgba(0,0,0,.6);
+}
+#slide .fondoSlide2:before{
+	content: '';
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(0,0,0,0.3);
+}
+
+/*Slide #3*/
+
+/*Slide #4*/
+
+/*Slide #5*/
+#slide ul li .textoSlide5 {
+	position: absolute;
+	width: 40%;
+	bottom: 6REM;
+	left: 93PX;
+	text-align: center;
+	z-index: 1;
+	color: white;
+}
+#slide ul li .textoSlide5 h1{
+	font-family: 'Cairo', sans-serif;
+}
+#slide .fondoSlide5:before{
+	content: '';
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(0,0,0,0.3);
+}
+
+/*=============================================
+GALERY
+=============================================*/
+
+#galeryBackground{
+	background: linear-gradient(to top right, #efefef, black);
+}
+
+#galeryBackground h3{
+	color: white;
+	font-size: 7rem;
+	font-family: 'Cairo', sans-serif;
+	margin-top: 2%;
+	font-weight: 700;
+}
+
+h3 span{
+	color: #EDAD13;
+	font-size: 7rem;
+	font-family: 'Cairo', sans-serif;
+	margin-top: 2%;
+	font-weight: 700;
+}
+
+#galeryBackground .bar2 span{
+	opacity: 0;
+	transition: all 6s ease;
+	transform: translateY(50px);
+	display: inline-block;
+}
+
+#galeryBackground span.fadeGalery{
+	opacity: 1;
+	transform: translateY(0px);
+	color: white;
+
+}
+
+#galeryBackground .bar1 a{
+	color:black;
+	font-family: 'Cairo', sans-serif;
+}
+
+#galeryBackground .bar1 #retroceder a p{
+	font-family: 'Cairo', sans-serif;
+	color: black;
+}
+
+#galeria{
+	position: relative;;
+	margin:auto;
+	width: 100%;
+}
+
+#galeria ul{
+	padding: 20px;
+}
+
+#galeria ul li{
+	padding: 10px;
+	cursor: pointer;
+	transition: .3s;
+}
+
+#galeria ul li:hover{
+	transition: .6s;
+	opacity: .6;
+}
+
+#galeria ul li img{
+	width: 100%;
+	height: 100px;
+	object-fit: cover;
+	border-radius: 5px;
+	box-shadow: 24px -17px 9px -3px rgb(0 0 0 / 70%);
+}
+/*---------------------Creando el modal que pondrá oscuro el fondo y traerá la foto al frente------------*/
+.modal-bg, .modal-bg2{
+	position: fixed;
+	width: 100%;
+	height: 100vh;
+	top:0;
+	left: 0;
+	background-color: rgba(0,0,0,0.5);
+	display: flex !important;
+	justify-content: center;
+	align-items: center;
+	visibility: hidden;
+	opacity: 0;
+	transition: visibility 0s, opacity 0.5s;
+}
+
+.bg-active{
+	visibility: inherit;
+	opacity: 1 !important;
+}
+
+.modal, .modal2{
+	position: relative;
+	width: 50%;
+	display: flex !important;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column; 
+}
+
+.modal-close, .modal-close2, .modal-close3{
+	color: white;
+	background-color: #EDAD13;
+	text-align: center;
+	border-bottom-left-radius: 30px;
+	border-bottom-right-radius: 30px;
+}
+
+.modal-close2, .modal-close3{
+	background-color: transparent;	
+}
+
+.modal-close, .modal-close2, .modal-close3:hover{
+	cursor: pointer;
+}
+
+.modal-close2, .modal-close2, .modal-close3{
+	cursor: pointer;
+	color: white;
+	font-weight: bold;
+	z-index: 1;
+	font-size: 20px;
+}
+
+/*=============================================
+INFORMACION
+=============================================*/
+hr{
+	height: 1px;
+	background: black;
+}
+
+#infoMedio .subtilteInfo{
+	font-family: 'Cairo', sans-serif;
+	font-size: 5vh;
+	font-weight: 600;
+}
+
+#infoMedio .whoAreWe{
+	margin-left: 3rem;
+	margin-right: 3rem;
+	margin-top: 0rem;
+	margin-bottom: 0rem;
+	text-align: center;
+	font-family: 'Cairo', sans-serif;
+	font-size: 3vh;
+}
+
+#infoMedio .quienes{
+	margin-top: -20px;
+}
+
+/*=============================================
+ICONOS INFORMACION
+=============================================*/
+.sectionIcon{
+	min-height: 20vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	perspective: 1000px;
+	box-sizing: border-box;
+
+}
+
+.contenedorInfo1 .boton1 a{
+	color: black;
+	text-decoration: none;
+}
+
+.contenedorInfo1 .boton1 a:hover{
+	color: black;	
+}
+
+.contenedorInfo1, .contenedorInfo2, .contenedorInfo3{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.card1, .card2, .card3{
+	transition: all 0.5s ease;
+	transform-style: preserve-3d;
+	min-height: 71vh;
+	width: 100%;
+	border-radius: 30px;
+	padding: 0rem 2rem;
+	box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0px 0px 50px rgba(0,0,0,0.2);
+}
+
+.icono1, .icono2, .icono3{
+	min-height: 30vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.icono1 img, .icono2 img, .icono3 img{
+	width: 8rem;
+	transition: all 0.5s ease-out;
+}
+
+.info1 h1, .info2 h1, .info3 h1{
+	font-family: 'Cairo', sans-serif;
+	font-size: 1.5rem;
+	font-weight: 600;
+	transition: all 0.75s ease-out; 
+}
+
+.info1 h3, .info2 h3, .info3 h3{
+	font-family: 'Cairo', sans-serif;
+	font-size: 1.3rem;
+	padding: 2rem 0rem;
+	font-weight: lighter;
+	color: #585858;
+	transition: all 0.75s ease-out; 
+}
+
+.info1 h3{
+	padding: 2.8rem 0rem;
+}
+
+.boton1 button, .boton2 button, .boton3 button{
+	width: 100%;
+	padding: 0.3rem 0rem;
+	border-radius: 30px;
+	background: #EDAD13;
+	font-family: 'Cairo', sans-serif;
+	cursor: pointer;
+	border: none;
+	font-weight: bolder;
+	transition: all 0.75s ease-out; 
+}
+
+
+/*=============================================
+MISION Y VISION
+=============================================*/
+/*efecto que aparece el texto lento*/
+.intro-text, .intro-text2, .intro-text3, .intro-text4, .intro-text5{
+	opacity: 0;
+	transform: translateY(20px);
+	transition: 0.5s all ease-in-out;
+}
+
+.intro-appear{
+	opacity: 1;
+	transform: translateY(0px);
+}
+
+.mision img, .vision img{
+	width: 100%;
+	margin-top: -4rem;
+	border-radius: 10rem;
+}
+
+.vision img{
+	width: 70%;
+	margin-left: 6rem;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19)
+}
+
+.mision h2, .vision h2{
+	margin-top: 0rem;
+	margin-bottom: 0rem;
+	text-align: center;
+	font-family: 'Cairo', sans-serif;
+	font-size: 5vh;
+	font-weight: 600;
+
+}
+
+.mision p, .vision p{
+	margin-top: 5rem;
+	margin-bottom: 0rem;
+	text-align: justify;
+	font-family: 'Cairo', sans-serif;
+	font-size: 3vh;
+	margin-left: 3rem;
+	margin-right: 5rem;
+}
+
+/*=============================================
+NUESTROS CLIENTES
+=============================================*/
+
+.clientes{
+	margin-top: -20px;
+}
+
+.clientes h2{
+	margin-top: 0rem;
+	margin-bottom: -1rem;
+	text-align: center;
+	font-family: 'Cairo', sans-serif;
+	font-size: 5vh;
+	font-weight: 600;
+}
+
+#slideCliente{
+	position:relative;
+	margin:auto;
+	width:100%;
+	overflow: hidden;
+}
+
+#slideCliente ul{
+	position:relative;
+	left:0%;
+	margin:auto;
+	height:auto;
+	width: 800%;
+	clear:both;
+	display: table;
+	padding-left: 0rem;
+}
+
+#slideCliente ul li{
+	position: relative;
+	float:left;
+	width:12.5%;
+}	
+
+#slideCliente ul li img{
+	width:90%;
+	object-fit: cover;
+}
+
+/*=============================================
+SERVICIOS
+=============================================*/
+
+.servicios .serviceA  img, .servicios .serviceB img, .servicios .serviceC img, .servicios .serviceD img{
+	width: 40%;
+}
+
+.servicios .serviceA, .servicios .serviceB, .servicios .serviceC, .servicios .serviceD{
+	text-align: center;
+}
+
+.servicios .serviceA h1, .servicios .serviceB h1, .servicios .serviceC h1, .servicios .serviceD h1{
+	font-family: 'Cairo', sans-serif;
+
+}
+.servicios .serviceA p, .servicios .serviceB p, .servicios .serviceC p, .servicios .serviceD p{
+	font-family: 'Cairo', sans-serif;
+}
+
+.servicios .serviceB img{
+	margin-bottom: -1rem;
+}
+
+.servicios .serviceD img{
+	margin-bottom: -2rem;
+}
+
+.servicios .serviceA{
+	position: absolute;
+	bottom: 30%;
+	left: 10%;
+	z-index: 1;
+	color: white;
+	font-size: 4vh;
+	width: 26%;
+}
+
+.servicios .serviceB{
+	position: absolute;
+	bottom: 44%;
+	left: 39%;
+	z-index: 1;
+	color: white;
+	font-size: 4vh;
+	width: 26%;
+}
+
+.servicios .serviceC{
+	position: absolute;
+	bottom: 34%;
+	left: 66%;
+	z-index: 1;
+	color: white;
+	font-size: 4vh;
+	width: 26%;
+}
+
+.servicios .serviceD{
+	position: absolute;
+	bottom: 19%;
+	left: 40%;
+	z-index: 1;
+	color: white;
+	font-size: 4vh;
+	width: 26%;
+}
+
+/*=============================================
+CONTACTENOS
+=============================================*/
+.contactenosPage{
+	background-image: url('../img/photos/fondo23.jpg');
+	overflow: hidden;
+	background-size: cover;
+}
+.contactenosPage .bar2 .moveCable{
+	height: 60rem;
+	/*transition = 5s height ease;*/
+
+}
+.contactenosPage .bar1 a {
+    color: black;
+    font-family: 'Cairo', sans-serif;
+}
+.contactenosPage .bar1 #retroceder p, .contactenosPage .bar1 #retroceder a{
+	color: black;
+}
+.contactenosPage .bar2{
+	text-align: center;
+	z-index: -1;
+}
+
+.contactenosPage #logotipoCompany{
+	width: 70px;
+	margin-top: -22px;
+	display: block;
+}
+
+.contactenosPage #fondoFormDatos{
+	width: 50%;
+	margin-top: -60px;
+	border-radius: 30px;
+	box-shadow: 32px -16px 11px rgb(0 0 0 / 35%), 32px -15px 50px rgb(0 0 0 / 40%);
+}
+
+.contactenosPage .fondoFormDatos #center{
+	overflow: hidden;
+}
+
+.contactenosPage #formulario form{
+	margin-top: -31%;
+}
+
+
+.contactenosPage #formulario form input, textarea{
+	display: block;
+	width: 30%;
+	margin-left: -15%;
+	border-radius: 5px;
+	border: 0;
+	outline: none;
+	margin-top: 10px;
+	font-family: 'Cairo', sans-serif;
+	background-color: rgba(0,0,0,0.4);
+	color: #fff;
+	box-sizing: border-box;
+	padding-left: 12px;
+	padding-right: 12px !important;
+}
+
+.contactenosPage #formulario form h1{
+	color: #fff;
+	margin-left: -23%;
+	font-family: 'Cairo', sans-serif;
+	font-size: 7vh;
+	font-weight: 700;
+}
+
+.contactenosPage #formulario form .message{
+	height: 11rem;
+	margin-left: 13rem;
+	margin-top: 10px;
+}
+
+.contactenosPage #formulario form #enviar{
+	margin-left: 13rem;
+	width: 9rem;
+	background: linear-gradient(90deg, rgba(130,130,130,1) 2%, rgba(105,103,98,1) 48%, rgba(59,54,39,1) 100%, rgba(31,23,3,1) 100%);
+	font-weight: bold;
+}
+.contactenosPage #formulario form textarea{
+	resize: none;
+}
+::placeholder {
+	color: white;
+	padding-right: 1rem;
+}
+
+/*Pagina de Gracias de Contactenos*/
+
+.graciasPage #formulario .gracias h1{
+	margin-left: -1%;
+}
+.graciasPage .gracias{
+	color: white;
+}
+.graciasPage #fondoFormDatos {
+    width: 40%;
+    height: 30rem;
+}
+.graciasPage .gracias{
+	margin-top: -22% !important;
+}
+/*=============================================
+FOOTER
+=============================================*/
+.footer{
+	background: linear-gradient(to right, #90690B, black);
+	color: white;
+}
+.footer a{
+	text-decoration: none;
+	display: contents;
+}
+.footer p, .footer span{
+		font-family: 'Cairo', sans-serif;
+		margin-bottom: 0rem;
+		color: white;
+}
+.footer .col1 p, .footer .col2 p{
+	margin-left: 10px;
+}
+.footer img{
+		width: 5%;
+		height: 100%;
+}
+.footer .col1 img{
+		width: 6%;
+		margin-top: 4px
+}
+.footer .col1 div, .footer .col2 div{
+	display: flex;
+}
+.footer .col3 img{
+		width: 20%; 
+		margin-top: 10px;
+}
+/*====================================================================================================
+PANTALLA DE ESCRITORIO GRANDE - LARGE (lg) - revisamos en portatil o pc
+====================================================================================================*/
+@media(min-width:1200px){
+
+	.col-lg-12{width:100%;}
+	.col-lg-11{width:91.66666667%;}
+	.col-lg-10{width:83.33333333%;}
+	.col-lg-9{width:75%;}
+	.col-lg-8{width:66.66666667%;}
+	.col-lg-7{width:58.33333333%;}
+	.col-lg-6{width:50%;}
+	.col-lg-5{width:41.66666667%;}
+	.col-lg-4{width: 33.33333333%;}
+	.col-lg-3{width: 25%;}
+	.col-lg-2 {width: 16.66666667%;}
+	.col-lg-1 {width: 8.33333333%;}
+	.col-lg-0 {display:none;}
+
+	#slide #paginacion {
+		position: absolute;
+		width: 100%;
+		margin: auto;
+		text-align: center;
+		bottom: 10px;
+		left: 0;
+		z-index: 1;
+	}
+	.contactenosPage #formulario form h1 {
+		margin-left: -18rem;
+		font-size: 3rem;
+	}
+	.contactenosPage #formulario form .message {
+		height: 9rem;
+		margin-left: 13rem;
+		margin-top: 10px;
+	}
+}
+/*=============================================
+PANTALLA DE ESCRITORIO MEDIANO - MEDIUM (md) - revisamos en tablet horizontal 1024px
+=============================================*/
+@media(max-width:1199px) and (min-width:992px) {
+	.col-md-12{width:100%;}
+	.col-md-11{width:91.66666667%;}
+	.col-md-10{width:83.33333333%;}
+	.col-md-9{width:75%;}
+	.col-md-8{width:66.66666667%;}
+	.col-md-7{width:58.33333333%;}
+	.col-md-6{width:50%;}
+	.col-md-5{width:41.66666667%;}
+	.col-md-4{width: 33.33333333%;}
+	.col-md-3{width: 25%;}
+	.col-md-2{width: 16.66666667%;}
+	.col-md-1{width: 8.33333333%;}
+	.col-md-0 {display:none;}
+
+	header .companyName{
+		margin-top: 1rem;
+	}
+	header .bar2{
+		margin-bottom: -4rem;
+	}
+	#slide ul li .textoSlide1 .h1 {
+		bottom: 9rem !important;
+		left: 6rem !important;
+		font-size: 7vh !important;
+	}
+	#slide ul li .textoSlide1 .h2 {
+		width: 40%;
+		bottom: 6rem !important;
+		left: 29rem !important;
+		font-size: 7vh !important;
+	}
+	#slide ul li .textoSlide1 .h3 {
+		bottom: 3rem !important;
+		left: 35rem !important;
+		font-size: 7vh !important;
+	}
+	#slide ul li .textoSlide2 {
+		bottom: 62px;
+	}
+	#slide ul li .textoSlide5 {
+		width: 70%;
+		bottom: 1REM;
+		left: 100PX;
+	}
+	#infoMedio .whoAreWe {
+		margin-left: 1.7rem;
+		margin-right: 1.7rem;
+		margin-top: -1rem;
+		font-size: 3vh;
+		text-align: justify;
+	}
+	#infoMedio .sectionIcon *{
+		transform: none !important;
+	}
+	#infoMedio .sectionIcon .info1 h1, 
+	#infoMedio .sectionIcon .info2 h1, 
+	#infoMedio .sectionIcon .info3 h1 {
+		font-size: 1.9rem;
+		font-weight: 600;
+		margin-bottom: -2.1rem;
+	}
+	#infoMedio .sectionIcon .info1 h3,
+	#infoMedio .sectionIcon .info2 h3,
+	#infoMedio .sectionIcon .info3 h3 {
+		font-family: 'Cairo', sans-serif;
+		font-size: 1.5rem;
+		padding: 2rem 0rem;
+		margin-bottom: -1rem;
+	}
+	#infoMedio .sectionIcon .icono1 img, 
+	#infoMedio .sectionIcon .icono2 img, 
+	#infoMedio .sectionIcon .icono3 img {
+		width: 6rem;
+		transition: none;
+	}
+	#infoMedio .sectionIcon .icono1, 
+	#infoMedio .sectionIcon .icono2, 
+	#infoMedio .sectionIcon .icono3 {
+		min-height: 17vh;
+	}
+	#infoMedio .sectionIcon .card1,
+	#infoMedio .sectionIcon .card2, 
+	#infoMedio .sectionIcon .card3{
+		min-height: 44vh !important;
+		width: 100%;
+	}
+	#infoMedio .sectionIcon button{
+		margin-top: 19px;
+		font-size: 1.4rem;
+		margin-bottom: 2rem;
+	}
+	#infoMedio .sectionIcon .boton1 button{
+		margin-top: 7rem;
+	}
+	#infoMedio .sectionIcon .boton2 button{
+		margin-top: 3rem;
+	}
+	#infoMedio .sectionIcon .contenedorInfo3{
+		margin-bottom: -10px;
+	}
+	.mision img, .vision img{
+		display: none;
+	}
+	/*-------------------SERVICIOS-------------------------------------*/
+	.servicios .serviceA p, .servicios .serviceB p,
+	.servicios .serviceC p, .servicios .serviceD p {
+		font-size: 20px;
+	}
+	.servicios .serviceA{
+		margin-bottom: 2rem;
+		width: 18rem;
+		left: 5rem;
+	}
+	.servicios .serviceB{
+		margin-bottom: 2rem;
+		width: 20rem;
+		left: 24rem;
+	}
+	.servicios .serviceC{
+		margin-bottom: 2rem;
+		width: 18rem;
+		left: 43rem;
+	}
+	.servicios .serviceD{
+		width: 18rem;
+		left: 25rem;
+		margin-bottom: 6rem;
+	}
+	.servicios .serviceD img{
+		display: none;
+	}
+	.servicios header .bar2{ 
+		margin-bottom: -2rem;
+	}
+	/*----------------------------CONTACTENOS-------------------------------------*/
+	.contactenosPage #fondoFormDatos {
+		width: 90%;
+	}
+	.contactenosPage #formulario form {
+		margin-top: -35rem;
+	}
+	.contactenosPage #formulario form h1 {
+		margin-left: -22rem;
+		font-size: 4rem;
+	}
+	.contactenosPage #formulario form input, textarea {
+		width: 33rem;
+		margin-left: -15rem;
+		height: 2rem;
+	}
+	.contactenosPage #formulario form .message {
+		height: 14rem;
+		margin-left: 17rem;
+		margin-top: 0.6rem;
+	}
+	.contactenosPage #formulario form #enviar {
+		margin-left: 17rem;
+		width: 33rem;
+	}
+	.contactenosPage .bar1 a {
+		color: black;
+		font-family: 'Cairo', sans-serif;
+	}
+	.contactenosPage{
+        overflow: visible;
+	}
+	/*Pagina de Gracias de Contactenos*/
+	.graciasPage #formulario .gracias h1{
+		margin-left: -1%;
+	}
+	.graciasPage .gracias{
+		color: white;
+		margin-top: -30% !important;
+	}
+	.graciasPage #fondoFormDatos {
+		width: 80%;
+		height: 25rem;
+	}
+}
+/*====================================================================================================
+PANTALLA DE TABLET - SMALL (sm) - revisamos en tablet vertical 768px
+====================================================================================================*/
+@media(max-width:991px) and (min-width:768px){
+	.col-sm-12{width:100%;}
+	.col-sm-11{width:91.66666667%;}
+	.col-sm-10{width:83.33333333%;}
+	.col-sm-9{width:75%;}
+	.col-sm-8{width:66.66666667%;}
+	.col-sm-7{width:58.33333333%;}
+	.col-sm-6{width:50%;}
+	.col-sm-5{width:41.66666667%;}
+	.col-sm-4{width: 33.33333333%;}
+	.col-sm-3{width: 25%;}
+	.col-sm-2{width: 16.66666667%;}
+	.col-sm-1{width: 8.33333333%;}
+	.col-sm-0 {display:none;}
+	
+	header .companyName {
+		width: 50%;
+		margin-left: 8rem;
+		margin-top: -1rem;
+	}
+	header .bar2 #logotipoCompany {
+		width: 100px;
+		margin-top: -47px;
+		margin-left: 5rem;
+	}
+	header .bar2 .companyName {
+		width: 100%;
+		margin-left: -7rem;
+		margin-top: -1rem;
+	}
+	header .bar2 .botonera{
+		margin-top: -7rem;
+	}
+	#slide #paginacion {
+		display: none;
+	}
+	#slide ul li .textoSlide1 .h1 {
+		bottom: 7REM;
+		left: 6rem;
+		font-size: 4vh;
+	}
+	#slide ul li .textoSlide1 .h2 {
+		bottom: 5REM;
+		left: 22rem;
+		font-size: 4vh;
+	}
+	#slide ul li .textoSlide1 .h3 {
+		bottom: 2REM;
+		left: 25rem;
+		font-size: 4vh;
+	}
+	#slide ul li .textoSlide2 {
+		bottom: 62px;
+	}
+	#slide ul li .textoSlide5 {
+		width: 70%;
+		bottom: 1REM;
+		left: 100PX;
+	}
+	#infoMedio .whoAreWe {
+		margin-left: 1.7rem;
+		margin-right: 1.7rem;
+		margin-top: -1rem;
+		font-size: 3vh;
+		text-align: justify;
+	}
+	#infoMedio .sectionIcon *{
+		transform: none !important;
+	}
+	#infoMedio .sectionIcon .info1 h1, 
+	#infoMedio .sectionIcon .info2 h1, 
+	#infoMedio .sectionIcon .info3 h1 {
+		font-size: 1.9rem;
+		font-weight: 600;
+		margin-bottom: -2.1rem;
+	}
+	#infoMedio .sectionIcon .info1 h3,
+	#infoMedio .sectionIcon .info2 h3,
+	#infoMedio .sectionIcon .info3 h3 {
+		font-family: 'Cairo', sans-serif;
+		font-size: 1.8rem;
+		padding: 2rem 0rem;
+		margin-bottom: -1rem;
+	}
+	#infoMedio .sectionIcon .icono1 img, 
+	#infoMedio .sectionIcon .icono2 img, 
+	#infoMedio .sectionIcon .icono3 img {
+		width: 10rem;
+		transition: none;
+	}
+	#infoMedio .sectionIcon .icono1, 
+	#infoMedio .sectionIcon .icono2, 
+	#infoMedio .sectionIcon .icono3 {
+		min-height: 24vh;
+	}
+	#infoMedio .sectionIcon .card1,
+	#infoMedio .sectionIcon .card2, 
+	#infoMedio .sectionIcon .card3{
+		min-height: 50vh;
+		width: 70%;
+	}
+	#infoMedio .sectionIcon .card3{
+		min-height: 53vh;
+	}
+	#infoMedio .sectionIcon button{
+		margin-top: 19px;
+		font-size: 1.4rem;
+	}
+	#infoMedio .sectionIcon .contenedorInfo3{
+		margin-bottom: -10px;
+	}
+	.mision img, .vision img{
+		display: none;
+	}
+	.mision h2{
+		margin-top: -1rem;
+		text-align: center;
+	}
+	.mision h2, .vision h2{
+		margin-bottom: -2.5rem;
+		font-size: 4vh;
+	}
+	.mision p, .vision p{
+		margin-left: 1rem;
+		margin-right: 1rem;
+		margin-top: 4rem;
+		margin-bottom: -1rem;
+		font-size: 2.5vh;
+	}
+	.mision p{
+		margin-bottom: -5rem;
+	}
+	.intro-appear, .intro-text5{
+		opacity: 1;
+		transform: none;
+	}
+	.clientes h2{
+		font-size: 4vh;
+	}
+	.footer .col1 img, .footer .col2 img{
+		display: none;
+	}
+
+	/*---------------------GALERY PAGE------------------------- */
+	#galeryBackground header .bar1 a{
+		color: black;
+		text-decoration: none;
+	}
+	#galeryBackground header #logotipo{
+		width: 70px;
+		margin-top: -24px;
+	}
+	#galeryBackground .bar2 span{
+		transform: none;
+	}
+
+	#galeryBackground .bar2 h3 span{
+		font-size: 3.6rem;
+	}
+	#galeryBackground .bar2 h3{
+		font-size: 3rem;	
+	}
+	#galeryBackground #galeria{
+		margin-top: -4rem;
+	}
+	#galeryBackground header .bar2 .titlePage{
+		margin-top: 2rem;
+		margin-left: -9rem;
+	}
+	/*-------------------SERVICIOS-------------------------------------*/
+	.servicios .serviceA p, .servicios .serviceB p,
+	.servicios .serviceC p, .servicios .serviceD p {
+		font-size: 20px;
+	}
+	.servicios .serviceA{
+		margin-bottom: -6rem;
+		width: 16rem;
+		left: 1rem;
+	}
+	.servicios .serviceB{
+		margin-bottom: -6rem;
+		width: 18rem;
+		left: 16rem;
+	}
+	.servicios .serviceC{
+		margin-bottom: -6rem;
+		width: 16rem;
+		left: 32rem;
+	}
+	.servicios .serviceD{
+		width: 18rem;
+		left: 16rem;
+		margin-bottom: -1rem;
+	}
+	.servicios .serviceD img{
+		display: none;
+	}
+	/*----------------------------CONTACTENOS-------------------------------------*/
+	.contactenosPage #fondoFormDatos {
+		width: 92%;
+		height: 40rem;
+	}
+	.contactenosPage #formulario form {
+		margin-top: -35rem;
+	}
+	.contactenosPage #formulario form h1 {
+		margin-left: -23%;
+		font-size: 5vh;
+	}
+	.contactenosPage #formulario form input, textarea {
+		width: 26rem;
+		margin-left: -10rem;
+		height: 2rem;
+	}
+	.contactenosPage #formulario form .message {
+		height: 14rem;
+		margin-left: 13rem;
+		margin-top: 0.7rem;
+	}
+	.contactenosPage .bar1 a {
+		color: black;
+		font-family: 'Cairo', sans-serif;
+	}
+	.contactenosPage{
+        overflow: visible;
+	}
+	/*Pagina de Gracias de Contactenos*/
+	.graciasPage #formulario .gracias h1{
+		margin-left: -1%;
+	}
+	.graciasPage .gracias{
+		color: white;
+		margin-top: -40% !important;
+	}
+	.graciasPage #fondoFormDatos {
+		width: 80%;
+		height: 25rem;
+	}
+}
+/*====================================================================================================
+PANTALLA DE PHONES - EXTRA SMALL (xs) - revisamos en movil horizontal 480px o vertical 320px
+====================================================================================================*/
+@media(max-width:767px){
+
+	.col-xs-12{width:100%;}
+	.col-xs-11{width:91.66666667%;}
+	.col-xs-10{width:83.33333333%;}
+	.col-xs-9{width:75%;}
+	.col-xs-8{width:66.66666667%;}
+	.col-xs-7{width:58.33333333%;}
+	.col-xs-6{width:50%;}
+	.col-xs-5{width:41.66666667%;}
+	.col-xs-4{width: 33.33333333%;}
+	.col-xs-3{width: 25%;}
+	.col-xs-2{width: 16.66666667%;}
+	.col-xs-1{width: 8.33333333%;}
+	.col-xs-0 {display:none;}
+
+	/*=============================================*/
+	/*HEADER SECTION 1*/
+
+	header .bar1 .lunasol{
+		text-align: end;
+	}
+	header .bar1, header .bar2{
+		text-align: center;
+	}
+
+	header .bar2 .companyName {
+		width: 100%;
+		margin-left: 0rem;
+		margin-top: -2rem;
+	}
+	header .bar2 li{
+		width: 50%;
+		margin-top: -1rem;
+	}
+	header .bar2 .botonera{
+		margin-top: -6rem;
+		margin-bottom: -3rem;
+		font-size: 1.2rem;
+		font-weight: 600;
+	}
+	/*SLIDESHOW*/
+	#slide{
+		display: none;
+	}
+	/*QUIENES SOMOS*/
+	#infoMedio .whoAreWe {
+		margin-left: 1rem;
+		margin-right: 1rem;
+		margin-top: -1rem;
+		font-size: 3vh;
+		text-align: justify;
+	}
+	/*ICONOS X3*/ 
+	#infoMedio .sectionIcon *{
+		transform: none !important;
+	}
+	#infoMedio .sectionIcon .info1 h1, 
+	#infoMedio .sectionIcon .info2 h1, 
+	#infoMedio .sectionIcon .info3 h1 {
+		font-family: 'Cairo', sans-serif;
+		font-size: 1.5rem;
+		font-weight: 600;
+		margin-bottom: -2.1rem;
+	}
+	#infoMedio .sectionIcon .info1 h3,
+	#infoMedio .sectionIcon .info2 h3,
+	#infoMedio .sectionIcon .info3 h3 {
+		font-family: 'Cairo', sans-serif;
+		font-size: 1.3rem;
+		padding: 2rem 0rem;
+		font-weight: lighter;
+		color: #585858;
+		transition: all 0.75s ease-out;
+		margin-bottom: -2rem;
+	}
+	#infoMedio .sectionIcon .icono1 img, 
+	#infoMedio .sectionIcon .icono2 img, 
+	#infoMedio .sectionIcon .icono3 img {
+		width: 7rem;
+		transition: none;
+	}
+	#infoMedio .sectionIcon .card2, 
+	#infoMedio .sectionIcon .card3{
+		min-height: 64vh;
+	}
+	#infoMedio .sectionIcon .card1{
+		min-height: 60vh;
+	}
+	#infoMedio .sectionIcon button{
+		margin-top: 19px;
+	}
+	#infoMedio .sectionIcon .contenedorInfo3{
+		margin-bottom: -10px;
+	}
+	.mision h2{
+		margin-top: -1rem;
+		text-align: center;
+	}
+
+	.mision h2, .vision h2{
+		margin-bottom: -2.5rem;
+	}
+	.mision p, .vision p{
+		margin-left: 1rem;
+		margin-right: 1rem;
+		margin-top: 4rem;
+		margin-bottom: -1rem;
+	}
+	.mision p{
+		margin-bottom: -5rem;
+	}
+	.mision img, .vision img{
+		display: none;
+	}
+	.clientes{
+		margin-top: -4rem;
+	}
+	.clientes h2{
+		margin-top: 2rem;
+	}
+	#slideCliente ul li {
+		float: none;
+	}
+	#slideCliente ul {
+		position: initial;
+	}
+	#slideCliente ul li img {
+		width: 96%;
+		object-fit: cover;
+	}
+	.footer .col1 img, .footer .col2 img{
+		display: none;
+	}
+	.footer .col1 p, .footer .col2 p {
+		margin-left: 0px;
+	}
+	.footer .col2{
+		margin-left: -10px;
+	}
+	.footer span {
+		font-weight: bold;
+	}
+	.footer .col3 {
+		text-align: center;
+		margin-top: -1.5rem;
+	}
+	/*-------------------------- GALERIA PAGE -----------------------*/
+	#galeryBackground header .bar1 a{
+		color: black;
+		text-decoration: none;
+	}
+	#galeryBackground header #logotipo{
+		width: 70px;
+		margin-top: -24px;
+	}
+	#galeryBackground .bar2 span{
+		transform: none;
+	}
+
+	#galeryBackground .bar2 h3 span{
+		font-size: 2.6rem;
+	}
+	#galeryBackground .bar2 h3{
+		font-size: 3rem;	
+	}
+	#galeryBackground #galeria{
+		margin-top: -4rem;
+	}
+	#galeryBackground header .bar2 .titlePage{
+		margin-top: 1rem;
+		margin-left: -2rem;
+	}
+	/*-----------------------------------SERVICIOS------------------------------*/
+	.servicios .fondoServiciosImg{
+		display: none;
+	}
+	.servicios .serviceA,
+	.servicios .serviceB,
+	.servicios .serviceC,
+	.servicios .serviceD{
+		position: inherit;
+		color: black;
+		font-size: 4vh;
+		width: 100%;
+		text-align: center;
+		font-family: 'Cairo', sans-serif;
+	}
+	.servicios .serviceA img,
+	.servicios .serviceB img,
+	.servicios .serviceC img,
+	.servicios .serviceD img{
+		display: none;
+	}
+	.servicios .serviceA h1,
+	.servicios .serviceB h1,
+	.servicios .serviceC h1,
+	.servicios .serviceD h1{
+		font-family: 'Cairo', sans-serif;
+		font-weight: 600;
+	}
+	.servicios .serviceA{
+		margin-top: 2rem;
+	}
+	/*-----------------------------------CONTACTENOS------------------------------*/
+	.contactenosPage #fondoFormDatos {
+		width: 100%;
+	}
+	.fondoFormDatos #fondoFormDatos{
+		display: none;
+	}
+	.contactenosPage #formulario form h1 {
+		margin-left: -1rem;
+		font-size: 6vh;
+		margin-top: 7rem;
+		color: black;
+	}
+	.contactenosPage #formulario form input, textarea {
+		width: 14rem;
+		margin-left: 0rem;
+		margin-top: 10px;
+		padding-left: 12px;
+		padding-right: 12px !important;
+	}
+	.contactenosPage #formulario form input, textarea {
+		width: 23rem;
+		margin-left: 0rem;
+		margin-top: 15px;
+	}
+	.contactenosPage #formulario form .message {
+		height: 11rem;
+		margin-left: 0rem;
+		margin-top: 10px;
+	}
+	.contactenosPage #formulario form #enviar {
+		margin-left: 0rem;
+		width: 12rem;
+	}
+	.contactenosPage .bar1 a {
+		color: black;
+		font-family: 'Cairo', sans-serif;
+	}
+	.contactenosPage{
+        overflow: visible;
+	}
+	/*Pagina de Gracias de Contactenos*/
+	.graciasPage .gracias{
+		color: black;
+	}
+	.graciasPage #fondoFormDatos {
+		display: none;
+	}
+}
